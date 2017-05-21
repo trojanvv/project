@@ -101,6 +101,7 @@ public class usersServlet extends HttpServlet {
                 out.println("</TABLE>");
 
                 out.println("</div>");
+                ConstHTML.footer(response);
             }
         }
 

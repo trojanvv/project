@@ -52,6 +52,7 @@ public class addPcServlet extends HttpServlet {
     }
 
     void sendPage(HttpServletResponse response) throws ServletException,IOException {
+        response.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
         ConstHTML.head("Registration PC",response);
 
@@ -89,5 +90,6 @@ public class addPcServlet extends HttpServlet {
         out.println("</FORM>");
         out.println("</div>");
         message = "";
+        ConstHTML.footer(response);
     }
 }

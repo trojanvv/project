@@ -95,7 +95,9 @@ public class DBview_servlet extends HttpServlet {
             }
 
             out.println("</table>");
-            out.println("</body></html>");
+
+            ConstHTML.footer(response);
+
             logFile.write(sql);
         } catch (SQLException e) {
             e.printStackTrace();

@@ -74,8 +74,8 @@ public class registrationServlet extends HttpServlet {
     }
 
     void sendPage(HttpServletResponse response) throws ServletException, IOException, SQLException {
-        PrintWriter out = response.getWriter();
         response.setCharacterEncoding("UTF-8");
+        PrintWriter out = response.getWriter();
         ConstHTML.head("Registration",response);
 
         out.println("<BR><div align=\"center\"><H2>Registration </H2>");
@@ -133,6 +133,7 @@ public class registrationServlet extends HttpServlet {
         out.println("</TABLE>");
         out.println("</FORM>");
         out.println("</div>");
+        ConstHTML.footer(response);
         message = "";
     }
 }

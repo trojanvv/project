@@ -114,7 +114,7 @@ public class pcServlet extends HttpServlet {
             }
 
             out.println("</table>");
-            out.println("</body></html>");
+            ConstHTML.footer(response);
             logFile.write(sql);
         } catch (SQLException e) {
             e.printStackTrace();

@@ -145,6 +145,7 @@ public class editUserServlet extends HttpServlet {
                 out.println("</TABLE>");
                 out.println("</FORM>");
                 out.println("</div>");
+                ConstHTML.footer(response);
                 message = "";
             }
         }
