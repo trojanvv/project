@@ -92,7 +92,7 @@ public class editUserServlet extends HttpServlet {
                 out.println("<INPUT TYPE='HIDDEN' NAME='page' value='1'>");
                 out.println("<INPUT TYPE='HIDDEN' NAME='user_id' value='" + resultSet.getString(1) + "'>");
 
-                out.println("<TABLE class=\"table\"  style='width:30%' align='center'>");
+                out.println("<TABLE class=\"table\"  style='width:50%' align='center'>");
 
                 out.println("<div class=\"form-group\">");
                 out.println("<TR>");
