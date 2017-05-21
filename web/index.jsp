@@ -82,7 +82,8 @@
 
       <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
         <div class="list-group">
-          <a href="/view" class="list-group-item active">Информация по входам</a>
+            <a href="" class="list-group-item active">Меню</a>
+          <a href="/view" class="list-group-item">Информация по входам</a>
           <a href="/user" class="list-group-item">Информация по пользователям</a>
           <a href="/pc" class="list-group-item">Информация по компьютерам</a>
           <a href="/registration" class="list-group-item">Регистрация нового пользователя</a>

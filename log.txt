@@ -1280,3 +1280,95 @@ WHERE
   users_info.id = users_session.user_id AND
   pc_info.pc_id =13  ORDER BY users_session.time_in DESC ;
 
+2017-05-21 07:06:51 //// SELECT 
+  pc_info.pc_id, 
+  pc_info.name, 
+  users_session.user_id, 
+  users_session.time_in, 
+  users_info.username
+FROM 
+  public.pc_info, 
+  public.users_session, 
+  public.users_info
+WHERE 
+  pc_info.pc_id = users_session.pc_id AND
+  users_info.id = users_session.user_id
+ORDER BY users_session.time_in DESC ;
+
+2017-05-21 07:07:03 //// SELECT 
+  pc_info.pc_id, 
+  pc_info.name, 
+  users_session.user_id, 
+  users_session.time_in, 
+  users_info.username
+FROM 
+  public.pc_info, 
+  public.users_session, 
+  public.users_info
+WHERE 
+  pc_info.pc_id = users_session.pc_id AND
+  users_info.id = users_session.user_id
+ORDER BY users_session.time_in DESC ;
+
+2017-05-21 07:07:13 //// true insert(INSERT INTO public.pc_info(name, locate) VALUES ('NoTactic & KoT', '65465');)
+2017-05-21 07:07:18 //// SELECT 
+  pc_info.pc_id, 
+  pc_info.name, 
+  users_session.user_id, 
+  users_session.time_in, 
+  users_info.username
+FROM 
+  public.pc_info, 
+  public.users_session, 
+  public.users_info
+WHERE 
+  pc_info.pc_id = users_session.pc_id AND
+  users_info.id = users_session.user_id
+ORDER BY users_session.time_in DESC ;
+
+2017-05-21 07:07:21 //// SELECT 
+  pc_info.pc_id, 
+  pc_info.name, 
+  users_session.user_id, 
+  users_session.time_in, 
+  users_info.username
+FROM 
+  public.pc_info, 
+  public.users_session, 
+  public.users_info
+WHERE 
+  pc_info.pc_id = users_session.pc_id AND
+  users_info.id = users_session.user_id AND
+  pc_info.pc_id =14  ORDER BY users_session.time_in DESC ;
+
+2017-05-21 07:15:04 //// SELECT 
+  pc_info.pc_id, 
+  pc_info.name, 
+  users_session.user_id, 
+  users_session.time_in, 
+  users_info.username
+FROM 
+  public.pc_info, 
+  public.users_session, 
+  public.users_info
+WHERE 
+  pc_info.pc_id = users_session.pc_id AND
+  users_info.id = users_session.user_id
+ORDER BY users_session.time_in DESC ;
+
+2017-05-21 07:15:31 //// SELECT 
+  pc_info.pc_id, 
+  pc_info.name, 
+  users_session.user_id, 
+  users_session.time_in, 
+  users_info.username
+FROM 
+  public.pc_info, 
+  public.users_session, 
+  public.users_info
+WHERE 
+  pc_info.pc_id = users_session.pc_id AND
+  users_info.id = users_session.user_id
+ORDER BY users_session.time_in DESC ;
+
+2017-05-21 07:34:29 //// SELECT users_session.id, users_session.user_id, users_info.username,users_session.pc_id, users_session.time_in, users_session.time_out FROM  public.users_session, public.users_info WHERE users_session.user_id = users_info.id ORDER BY users_session.id DESC;
