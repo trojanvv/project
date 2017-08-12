@@ -60,7 +60,7 @@ public class ConstHTML {
                 "    <div class=\"container\">\n" +
                 "      <!-- Brand and toggle get grouped for better mobile display -->\n" +
                 "      <div class=\"navbar-header\">\n" +
-                "        <a class=\"navbar-brand\" href=\"/\">Cистема автоматизированного контроля доступа</a>\n" +
+                "        <a class=\"navbar-brand\" href=\"/\">АРМ - администратора</a>\n" +
                 "      </div>\n" +
                 "\n" +
                 "        <div id=\"layer1\">\n" +

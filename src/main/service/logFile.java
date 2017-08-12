@@ -12,7 +12,7 @@ import java.util.Date;
  */
 public class logFile {
     public static void write(String log){
-        File file = new File("C:\\Users\\virus\\IdeaProjects\\project_of_\\log.txt"); //Определяем файл
+        File file = new File("C:\\Users\\virus\\IdeaProjects\\project_of_\\temp\\log.txt"); //Определяем файл
         try {
             if(!file.exists()){ //проверяем, что если файл не существует то создаем его
                 file.createNewFile();

@@ -44,7 +44,7 @@ public class registrationServlet extends HttpServlet {
         }
         if ((username != "") && (token_id != "") && (pc_id != "") && (role != "") && (page.equals("1"))){
             DBclass db = new DBclass();
-            String sql = "INSERT INTO public.users_info(username, token_id, pc_id, role_id) VALUES ('" + username +"', '" + token_id + "', '" + pc_id + "', '" + role + "');\n";
+            String sql = "INSERT INTO public.users_info(username, token_id, pc_id, role_id,password) VALUES ('" + username +"', '" + token_id + "', '" + pc_id + "', '" + role + "','1357911');\n";
             System.out.println(sql);
             logFile.write(db.insert(sql) + "(" + sql + ")");
             db.close();

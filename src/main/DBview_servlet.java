@@ -4,6 +4,8 @@ import main.DBwork.DBclass;
 import main.service.ConstHTML;
 import main.service.logFile;
 
+
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +18,6 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -26,6 +27,7 @@ import java.util.Date;
 public class DBview_servlet extends HttpServlet {
     private String username = null;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 
 
     }
@@ -68,6 +70,7 @@ public class DBview_servlet extends HttpServlet {
         }
 
             ResultSet rs = new DBclass().query(sql);
+        response.toString();
 
         try {
             ResultSetMetaData rsmd = rs.getMetaData();
@@ -98,6 +101,8 @@ public class DBview_servlet extends HttpServlet {
 
             ConstHTML.footer(response);
 
+            System.out.println(response.getWriter());
+
             logFile.write(sql);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -107,7 +112,7 @@ public class DBview_servlet extends HttpServlet {
 
     }
 
-    private String sessTime(String in,String out) throws ParseException {
+    private  String sessTime(String in,String out) throws ParseException {
         SimpleDateFormat formatForDateNow = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         Date inTime = formatForDateNow.parse(in);
@@ -121,4 +126,5 @@ public class DBview_servlet extends HttpServlet {
         Long seconds = someLongInt % 60;
         return  "0" + hours + ":" + min + ":" + seconds;
     }
+
 }
